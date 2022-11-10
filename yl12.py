@@ -6,7 +6,7 @@ print(fruitlist)
 fruitlist[2] = "Pirn"
 print(fruitlist)
 print(len(fruitlist))
-fruitlist.remove("Viinamari")
+fruitlist.remove(1)
 print(fruitlist)
 fruitlist.reverse()
 print(fruitlist)
