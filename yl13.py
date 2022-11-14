@@ -1,7 +1,9 @@
-lemmikloom = ("Mis su lemmikloom on")
-print(lemmikloom)
-print(lemmikloom[0])
+lemmikloom = input("Mis su lemmikloom on: ")
 
-loomalist = ("Koer", "Kass", "Hamster")
-loomalist.append("Hobune")
+loomalist = ["Koer", "Kass", "Hamster"]
+
+loomalist.append(lemmikloom)
+
 print(loomalist)
+
+print(loomalist[-1][-1])
