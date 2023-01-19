@@ -1,3 +1,4 @@
+from collections import OrderedDict
 me = {
     'first_name': 'Kevin',
     'last_name': 'Jašin',
@@ -6,19 +7,25 @@ me = {
     'dessert': 'Ice cream'
 }
 
-print(me.get('place_of_living'))
-print(me['place_of_living'])
+#print(me.get('place_of_living'))
+#print(me['place_of_living'])
 
 me['dessert'] = 'Brownie'
+me['personal_code'] = '12234344'
+me.pop("birth_year")
+me['Height'] = '1.80'
+me = OrderedDict(reversed(list(me.items())))
 
 for k, v in me.items():
     print(k, v)
 
-    me['personal_code'] = '1234567890'
+if 'personal_code' in me:
+    print('isikukood on olemas')
+else:
+    print('isikukoodi ei ole')
+print(len(me)) 
+    
 
-   if 'personal_code' in me:
-       print('isikukood on olemas')
-   else:
-    print()
+    
 
 
