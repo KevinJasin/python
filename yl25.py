@@ -9,7 +9,16 @@ me = {
 print(me.get('place_of_living'))
 print(me['place_of_living'])
 
-me['dessert'] = 'Ice cream'
+me['dessert'] = 'Brownie'
 
-for k, v in me_items():
+for k, v in me.items():
     print(k, v)
+
+    me['personal_code'] = '1234567890'
+
+   if 'personal_code' in me:
+       print('isikukood on olemas')
+   else:
+    print()
+
+
