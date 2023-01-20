@@ -13,7 +13,7 @@ me = {
 me['dessert'] = 'Brownie'
 me['personal_code'] = '12234344'
 me.pop("birth_year")
-me['Height'] = '1.80'
+me['height'] = '1.80'
 me = OrderedDict(reversed(list(me.items())))
 
 for k, v in me.items():
@@ -25,7 +25,3 @@ else:
     print('isikukoodi ei ole')
 print(len(me)) 
     
-
-    
-
-
