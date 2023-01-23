@@ -1,3 +1,4 @@
+import math
 sales_results = {
     "Johnver": {
         "revenue": {
@@ -72,17 +73,14 @@ sales_results = {
 }
 
 for name, sales in sales_results.items():
-    print(name)
-
-    commission = 0
+    commission = 0 
     for drink_name, drink_sales in sales["revenue"].items():
         profit = drink_sales - sales["expenses"][drink_name]
-        print(drink_name, profit)
         if profit > 0:
-            print("kasum on positiivne", profit * 0.062)
-            commission += profit * 0.062
+           commission += profit * 0.062
+           floor_val = math.floor(commission)
+    print(name, ":", floor_val)
+    
+     
+       
             
-    print(commission)       
-            
-
-        
